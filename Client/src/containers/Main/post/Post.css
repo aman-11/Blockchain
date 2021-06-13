@@ -1,0 +1,12 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    align-self: center;
+    justify-content: space-between;
+    
+}
+
+.cards> div{
+    padding:0% 0 2% 2%;
+}

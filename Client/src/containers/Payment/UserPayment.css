@@ -1,0 +1,102 @@
+.users > h3{
+    color:grey;
+    font-size: 28px;
+    letter-spacing: 1.8px;
+    border: 2px solid grey;
+    border-radius:24px;
+}
+
+.contents{
+    width: 100%;
+}
+
+.content__insides{
+    display: flex;
+    flex-direction: row;
+    margin:2% 5% 0 5%;
+    justify-content: space-between;
+}
+
+.amount__cards{
+    border : 2px solid 	#3CB371;
+    padding:7%;
+    border-radius: 16px;
+    background-color:	#3CB371;
+    align-self: center;
+    margin-bottom: 50%;
+}
+
+.amounts{
+    display: flex;
+    justify-items: center;
+}
+
+.amounts> span {
+    font-size: 48px;
+    font-weight:750 ;
+    color: white;
+}
+
+.transactions > span{
+    margin-top:6px;
+    color:#FEE996;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.payment__cards{
+    border : 2px solid #3CB371;
+    padding:7%;
+    border-radius: 16px;
+    background-color:#3CB371;
+    width: 40%;
+   height: 40%;
+}
+
+.inputs>form>input{
+    width: 100%;
+    padding: 16px;
+    border: 2px solid white;
+    border-radius: 14px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.inputs > form > input :focus{
+    border: 2px solid black;
+}
+
+.amount__clicks{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.amount__clicks > span {
+    color:white;
+    border: 1px solid white ;
+    background-color: white;
+    color: black;
+    margin:3%;
+    padding: 4px;
+    border-radius: 16px;
+    width:15%;
+    padding:10px;
+    text-align: center;
+}
+
+.inputs > form >.pays {
+    margin-top:30px;
+    margin-left:32%;
+    border: 2px solid #FEE996;
+    background-color:#FEE996;
+    color:grey;
+    width:30%;
+    border-radius: 28px;
+    font-size:28px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    
+}

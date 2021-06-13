@@ -1,0 +1,24 @@
+.ctr{
+    margin-top:28px;
+}
+
+.pay_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+  
+  .pay_title > .pay__title_left {
+    padding-right: 130px;
+  }
+  
+  .pay_title > .pay__title_right {
+    padding-left: 130px;
+  }
+  
+  .each__pay{
+      border-bottom:4px solid #D3D3D3;
+      padding:16px;
+
+  }
