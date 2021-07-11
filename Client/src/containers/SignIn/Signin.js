@@ -11,8 +11,6 @@ const Signin=()=> {
     const [formData, setformData] = useState(intialState)
     const handleSubmit=(e)=> {
         e.preventDefault();
-        console.log("ready to dispatch process")
-        console.log(formData)
         dispatch(Signup(formData, history))  //signup
     }
 

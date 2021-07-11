@@ -1,20 +1,32 @@
-import React from 'react'
+import React,{useState } from 'react'
+import {useHistory} from 'react-router-dom'
 import Navbar from '../Navbar/Navbar';
-
-
-function Login() {
+import { useDispatch } from 'react-redux';
+import { login } from '../../Actions/User';
+const intialState = { email: '', password: '' }
+const Login = () => {
+    const history = useHistory()
+    const dispatch = useDispatch()
+    const [formData, setformData] = useState(intialState)
+    const handleSubmit=(e)=> {
+        e.preventDefault()
+        dispatch(login(formData, history))  //signup
+    }    
+    const handleChange = (e) => {
+        setformData({ ...formData, [e.target.name]: e.target.value });
+    }
 
     return (
         <div>
             <Navbar />
-            <form action="" className="logsign">
+            <form action="" className="logsign" onSubmit={handleSubmit}>
                 <h2>Log In</h2>
-                <label for="email">Email</label>
-                <input type="text" name="email" required />
+                <label>Email</label>
+                <input type="text" name="email" onChange={handleChange} required />
                 <div className="email error"></div>
 
-                <label for="password">Password</label>
-                <input type="password" name="password" required />
+                <label>Password</label>
+                <input type="password" name="password" onChange={handleChange} required />
                 <div className="password error"></div>
                 <button>Log In</button>
             </form>

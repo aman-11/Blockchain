@@ -1,12 +1,16 @@
 .cards{
-    display: flex;
-    flex-direction: row;
-    width:100%;
-    align-self: center;
-    justify-content: space-between;
-    
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .cards> div{
-    padding:0% 0 2% 2%;
+    padding:0% 15% 8% 8%;
+}
+
+.campDetail {
+    font-size:18px;
+    margin-left:5%;
+    color:tomato;
+    text-align: center;
+    font-weight: bolder;
 }

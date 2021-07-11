@@ -2,14 +2,21 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Style.css';
 export default function Header() {
+    const user = JSON.parse(localStorage.getItem('profile'));
     return (
         <nav className="nav" >
-            <Link to="/"><h1 >Serve Humanity :)
+            <Link to="/main"><h1 >Serve Humanity :)
             </h1>
             </Link>
             <ul>
-                <Link to="/login"><li>LOG IN</li></Link>
-                <Link to="/signin" ><li><span className="btn">SIGN IN</span></li></Link>
+                <li><span>{user.email}</span></li>
+                <Link to="/" onClick={() => {
+                    localStorage.clear()
+                    window.location.reload()
+                }}>
+                    <li><span className="btn">LOGOUT</span></li>
+                </Link>
+
             </ul>
         </nav>
     );
